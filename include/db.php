@@ -1,6 +1,5 @@
 <?php
-include("./config.php");
-
+// include('./include/config.php');
 $db = new PDO(DNS,  DB_USER, DB_PASS);
 
 ?>
