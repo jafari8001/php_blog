@@ -2,7 +2,7 @@
     // include("./include/config.php");
     // include("./include/db.php");
 
-    $query = "SELECT * FROM postslider";
+    $query = "SELECT * FROM post_slider";
     $post_slider = $db-> query($query);
 ?>
 
