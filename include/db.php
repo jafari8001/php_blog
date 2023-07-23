@@ -21,9 +21,10 @@ if ($db = new PDO(DNS,  DB_USER, DB_PASS)) {
             FOREIGN KEY (aoutor) REFERENCES users(id)
         )");
 
-$db->exec("CREATE TABLE IF NOT EXISTS `post_slider`(
+    $db->exec("CREATE TABLE IF NOT EXISTS `post_slider`(
             `id` INT(11) AUTO_INCREMENT PRIMARY KEY,
             `post_id` int(11),
+            `active` TINYINT(1) DEFAULT 1,
             FOREIGN KEY (post_id) REFERENCES posts(id)
         )");
 

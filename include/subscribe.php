@@ -15,7 +15,7 @@
 
 <form class="row justify-content-center" method="post">
         <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Name</label>
+            <label for="name" class="visually-hidden">Name</label>
             <input type="text" class="form-control" id="sub-name" placeholder="Name" name="name">
         </div>
         <div class="col-auto">
