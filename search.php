@@ -4,11 +4,10 @@
     if (isset($_GET['search'])) {
         $keyword = $_GET['search'];
         echo $keyword;
-        $posts = $db-> prepare("SELECT * FROM posts WHERE title LIKE :keyword");
+        $posts = $db-> prepare("SELECT * FROM posts WHERE title OR body LIKE :keyword");
         $posts->execute(['keyword' => "%$keyword%"]);
     }
 ?>
-
 <section class="my-5">
     <div class="container">
      <div class="d-flex justify-content-center">
