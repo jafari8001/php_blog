@@ -29,7 +29,7 @@
             ?>
 
             <div class="carousel-item <?php echo( $slider['active'] ? 'active': '' ) ?>">
-                <img src="./image/<?php echo $post['image'] ?>" class="d-block w-100" alt="...">
+                <img src="./upload/<?php echo $post['image'] ?>" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5><?php echo $post['title'] ?></h5>
                     <p><?php echo substr($post['body'], 0 , 150). "..." ?></p>

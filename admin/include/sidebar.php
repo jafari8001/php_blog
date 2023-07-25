@@ -24,4 +24,8 @@
         </a>
       </li>
     </ul>
+    <hr>
+    <div class="dropdown text-center">
+      <a class="btn btn-outline-light" href="../index.php"> Back to Home </a>
+    </div>
 </div>
