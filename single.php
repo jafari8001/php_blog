@@ -23,7 +23,7 @@
 ?>
 
 <div class="container text-center text-bg-light shadow w-75 py-5" >
-    <img src="./image/<?php echo $post_img?>" class="img-fluid rounded w-75" alt="...">
+    <img src="./upload/<?php echo $post_img?>" class="img-fluid rounded w-75" alt="...">
     <div class="text-start container w-75 p-0">
         <h2 class="my-4">
             <?php echo $post_title ?>

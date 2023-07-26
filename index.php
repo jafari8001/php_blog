@@ -4,7 +4,7 @@
 ?>
 
 <?php
-    include(".\include\archive_posts.php")
+    include("./include/archive_posts.php")
 ?>
 
 <?php

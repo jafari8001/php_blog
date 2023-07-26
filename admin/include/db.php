@@ -17,14 +17,14 @@
                 `body` TEXT,
                 `aoutor` INT(11),
                 `image` VARCHAR(100),
-                FOREIGN KEY (aoutor) REFERENCES users(id)
+                FOREIGN KEY (aoutor) REFERENCES users(id) ON UPDATE CASCADE ON DELETE CASCADE
             )");
     
         $db->exec("CREATE TABLE IF NOT EXISTS `post_slider`(
                 `id` INT(11) AUTO_INCREMENT PRIMARY KEY,
                 `post_id` int(11),
                 `active` TINYINT(1) DEFAULT 1,
-                FOREIGN KEY (post_id) REFERENCES posts(id)
+                FOREIGN KEY (post_id) REFERENCES posts(id) ON UPDATE CASCADE ON DELETE CASCADE
             )");
     
         $db->exec("CREATE TABLE IF NOT EXISTS `menu`(
@@ -44,8 +44,8 @@
                 `email` VARCHAR(100) NOT NULL,
                 `post_id` int(11),
                 `user_id` int(11),
-                FOREIGN KEY (post_id) REFERENCES posts(id),
-                FOREIGN KEY (user_id) REFERENCES users(id)
+                FOREIGN KEY (post_id) REFERENCES posts(id) ON UPDATE CASCADE ON DELETE CASCADE ,
+                FOREIGN KEY (user_id) REFERENCES users(id) ON UPDATE CASCADE ON DELETE CASCADE
             )");
     }
     
