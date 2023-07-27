@@ -4,8 +4,6 @@
     include("./include/db.php");
     include("./include/header.php");
 
-    $users = $db->query("SELECT * FROM users");
-
 
     if (isset($_POST['add'])) {
         if ( trim($_POST['name']) != "" && trim($_POST['email']) != "") {

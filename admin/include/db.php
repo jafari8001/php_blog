@@ -23,7 +23,7 @@
         $db->exec("CREATE TABLE IF NOT EXISTS `post_slider`(
                 `id` INT(11) AUTO_INCREMENT PRIMARY KEY,
                 `post_id` int(11),
-                `active` TINYINT(1) DEFAULT 1,
+                `active` TINYINT(1) DEFAULT 0,
                 FOREIGN KEY (post_id) REFERENCES posts(id) ON UPDATE CASCADE ON DELETE CASCADE
             )");
     

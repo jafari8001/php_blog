@@ -23,6 +23,12 @@
           Users
         </a>
       </li>
+      <li>
+        <a href="./slider.php" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+          Slider
+        </a>
+      </li>
     </ul>
     <hr>
     <div class="dropdown text-center">
